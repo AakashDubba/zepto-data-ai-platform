@@ -1,0 +1,3 @@
+Zepto Order Cancellation Policy
+
+Orders can be cancelled free of charge within 60 seconds of placing the order. After 60 seconds, if the order has moved to "Being Packed" status, a cancellation fee of ₹25 may apply. Orders that are already "Out for Delivery" cannot be cancelled through the app and must be refused at the doorstep. In case of doorstep refusal, the full order amount minus a ₹50 handling fee will be refunded. For subscription-based recurring orders, cancellation must be done at least 12 hours before the scheduled delivery time. Cancelled orders are reflected in your order history with a "Cancelled" status and the refund timeline follows our standard refund policy.

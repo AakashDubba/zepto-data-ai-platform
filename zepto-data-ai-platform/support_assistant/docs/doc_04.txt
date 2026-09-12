@@ -1,0 +1,3 @@
+Zepto Order Tracking
+
+Once an order is placed, you can track its status in real-time through the Zepto app. Order statuses include: Order Placed, Order Confirmed, Being Packed, Out for Delivery, and Delivered. Push notifications are sent at each status change. You can also view estimated delivery time which updates dynamically based on rider location. If your order shows "Out for Delivery" for more than 15 minutes, please contact support through the in-app chat for immediate assistance. For completed orders, delivery confirmation includes a photo proof of delivery at your doorstep. Order history is available under My Orders for the past 6 months.
