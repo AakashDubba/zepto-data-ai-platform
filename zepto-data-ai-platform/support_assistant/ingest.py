@@ -6,6 +6,14 @@ Ingests 8 policy documents, chunks them, embeds using sentence-transformers
 """
 
 import os
+import sys
+
+# Fix Windows console encoding
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
+
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
@@ -14,8 +22,8 @@ DOCS_DIR = os.path.join(BASE_DIR, "docs")
 CHROMA_DIR = os.path.join(BASE_DIR, "chroma_db")
 COLLECTION_NAME = "zepto_policies"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-CHUNK_SIZE = 300  # characters per chunk (approximate)
-CHUNK_OVERLAP = 50
+CHUNK_SIZE = 800  # characters per chunk (approximate)
+CHUNK_OVERLAP = 100
 
 
 def chunk_text(text, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
