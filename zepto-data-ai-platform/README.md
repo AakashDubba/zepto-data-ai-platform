@@ -96,14 +96,14 @@ docker stop zepto-test && docker rm zepto-test
 
 ## Module Details
 
-### Module 1: Data Pipeline (25 marks)
+### Module 1: Data Pipeline 
 - **Web Scraper**: Extracts ≥ 60 books across ≥ 3 categories from [books.toscrape.com](http://books.toscrape.com/)
 - **Conversion**: `1 GBP = 105.50 INR` (fixed baseline constant)
 - **Cleaning**: Median imputation for numeric anomalies; row dropping for missing identifiers
 - **Storage**: Normalized 2-table SQLite schema (`categories` + `books` with PK/FK)
 - **Queries**: 5 SQL queries (SELECT/WHERE, ORDER BY, LIMIT, DISTINCT, IN/BETWEEN, JOIN) + `pd.merge()` equivalence
 
-### Module 2: Analytics Pipeline (50 marks)
+### Module 2: Analytics Pipeline 
 - **EDA**: Profiling, threshold-based cleaning, IQR outliers, skewness, 6×6 heatmap, 4 multivariate charts
 - **Classification**: Logistic Regression, Decision Tree, Random Forest with full metric suite
 - **Imbalance**: Baseline vs `class_weight='balanced'` vs SMOTE (via `imblearn.Pipeline`)
@@ -111,7 +111,7 @@ docker stop zepto-test && docker rm zepto-test
 - **Regression**: Linear regression predicting `fare` with MAE, RMSE, R², Adj R² + heteroscedasticity analysis
 - **Serialization**: `best_pipeline.joblib` with reload verification
 
-### Module 3: Support Assistant (25 marks)
+### Module 3: Support Assistant 
 - **RAG Pipeline**: LangGraph `StateGraph` with 3 nodes + conditional intent routing
 - **Vector Store**: ChromaDB with `all-MiniLM-L6-v2` embeddings from 8 policy documents
 - **API**: FastAPI `POST /ask` with Pydantic validation
